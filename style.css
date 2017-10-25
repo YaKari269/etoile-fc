@@ -1,0 +1,721 @@
+/*
+Theme Name: Etoile Football Club
+Theme URI: http://www.efc-bobigny.fr
+Author: E-Studio Factory
+Author URI: https://www.univ-paris13.fr/
+Description: Site officiel du club de football du quartier de l'étoile à Bobigny (projet d'étude) 
+Version: 1.0
+
+*/
+html, body{
+	margin:0;
+	padding:0;
+}
+@font-face{
+    font-family: 'Aku-Kamu';
+    src:url(fonts/aku_kamu/AkuKamu.otf);
+}
+@font-face {
+	font-family: 'Franklin Book';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Franklin Gothic Book'), url(fonts/franklin/FRABK.woff) format('woff');
+}
+.container{
+	position: relative;
+}
+/** HEADER **/
+
+	/* CONSTRUCTION */
+	.text-vertical-center {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.text-vertical-center h1, .text-vertical-center h3 {
+	  color:#FFF;
+	  font-family: 'Aku-Kamu';
+
+	}
+	.text-vertical-center h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 4.5em;
+		font-weight: 700;
+	}
+	.construction{
+		display: table;
+		position: relative;
+		width: 100%;
+		height: 950px;
+		background: url(img/Header1.jpg) no-repeat center center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.text-vertical-center img{
+		width: 200px;
+	}
+
+#header{
+	font-family: 'Aku-Kamu';
+	position: fixed;
+	background-color: #FFF;
+	width:100%;
+    z-index: 998;
+    top: 0;
+    left: 0;
+}
+.txt{
+	float:left;
+    color: #0f75bc;
+}
+#icon{
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+	float: left;
+}
+#icon-social{
+	float:right
+}
+#icon-social p{
+	text-align: right;
+}
+
+#icon-social img{
+	width: 20px;
+	height: 20px;
+}
+
+#icon img a{
+	text-align: right;
+}
+
+@media (max-width: 782px){
+	.txt{
+		float:left;
+		color: #0f75bc;
+	}
+	#icon-social{
+		float: right;
+	}
+	#social .txt, #icon-social p {
+		font-size: 0.8em;
+	}
+	#icon{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+	}
+	#icon img{
+		margin-top: 5px;
+	}
+	
+}
+
+
+/** FIN HEADER **/
+
+/** CLASSEMENT **/
+#classement {
+    height: auto;
+    min-height: 7.500em;
+	max-width: 950px;
+    background-color: #4D4D4D;
+}
+#classement .contenu {
+    position: relative;
+    height: 120px;
+}
+#classement .contenu span {
+    font-family: 'Aku-Kamu';
+    position: absolute;
+    display: inline-block;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#classement .ligue {
+    font-size: 25px;
+    top: 30px;
+    width: 80%;
+    text-align: right;
+}
+#classement .poule {
+    font-size: 20px;
+    top: 73px;
+    vertical-align: baseline;
+    width: 80%;
+    text-align: right;
+}
+#classement .place {
+    font-size: 4.500em;
+    line-height: 120px;
+    right: 0;
+    width: auto;
+    min-height: 120px;
+    padding-left: 10px;
+}
+#classement .resume {
+    height: 120px;
+}
+#classement .highlightBlock {
+    background-color: #000;
+}
+#classement .blockResume {
+    display: inline-block;
+    width: 18.5%;
+    height: 120px;
+    padding-top: 15px;
+}
+#classement .pts, #classement .journee, #classement .victoire,
+ #classement .nul, #classement .defaite {
+	font-family: 'Aku-Kamu';
+    font-size: 2em;
+    font-weight: 400;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+ }
+ #classement .contain {
+	font-family: 'Aku-Kamu';
+    font-size: 2.25em;
+    /* font-weight: 700; */
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15px;
+}
+@media (max-width: 2000px){
+	#classement, #titrePage {
+		margin-top: 130px; 
+	}
+}
+
+@media (max-width: 992px){
+	#classement, #titrePage {
+		margin-top: 134px;
+	}
+}
+
+@media (max-width: 768px){
+	#classement, #titrePage {
+		margin-top: 90px;
+	}
+}
+/** FIN CLASSEMENT**/
+
+/** CONTENU **/
+div#contenu {
+    margin-top: 20px;
+}
+
+.plugFB iframe{
+	width:100%;
+	height:500px;
+}
+.case-page{
+	 display: table;
+    position: relative;
+    width: 100%;
+    height: 250px;
+	margin-bottom: 1.65em;
+    background: url(img/default-image.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+}
+
+.case-page .titre h2{
+	font-family: "Aku-Kamu";
+	margin: 0;
+	padding: 5px 5px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.link-page{
+	text-decoration: none;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+	background-color: rgba(51, 51, 51, 0.60);
+}
+.link-page:hover{
+	text-decoration:none;
+}
+.cases .row{
+	margin-top: 0 !important;
+}
+@media (min-width:900px){
+	#contenu .row{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 768px){
+	.cases .col-sm-6{
+		padding-right: 0;
+	}
+}
+/** FIN CONTENU **/
+
+/*PAGE PRESENTATION */
+#p{
+font-family: 'Franklin Book';
+font-size: 20px;
+font-weight: normal;
+overflow: hidden;
+}
+#imgpre img{
+width: 100%; 
+}
+
+#imgpre .col-sm-12{
+	padding: 0;
+}
+
+#p p img.alignleft {
+    float: left;
+}
+#p p img.alignright {
+    float: right;
+}
+#p p img.aligncenter {
+    margin: auto;
+    display: block;
+}
+
+/*PAGE PRESENTATION */
+
+/*PAGE PARTENAIRE */
+#partenaire{
+  padding: 50px 0;
+}
+#partImg .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+	height: 250px;
+	overflow: hidden;
+}
+
+#partImg .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 250px;
+	height: 100%;
+	width:100%;
+}
+
+#partImg .portfolio-item .portfolio-link img {
+    height: 100%;
+	width:100%;
+}
+
+#partImg .portfolio-item .portfolio-link .kit {
+    height:100%;
+}
+
+#partImg .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(15,117,188,0.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#partImg .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#partImg .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+	padding: 10px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#partImg .portfolio-item .portfolio-link .caption .caption-content h3,
+#partImg .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#partImg .portfolio-item .portfolio-link .caption img {
+    width:100%;
+	height:100%;
+}
+
+#partImg * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #partImg .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+.portfolio-modal{
+	padding-right: 0 !important;
+}
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+.modal-body h2, .modal-body p, .modal-body ul li{
+	color:#333333;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+	margin: auto;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal {
+    display: none;
+    opacity: 0;
+}
+.strong{
+	font-weight: bold;
+}
+/*PAGE PARTENAIRE */
+
+/* PAGE GALERIE */
+#galerie{
+  padding: 50px 0;
+}
+
+#gallery-1 .gallery-item {
+    margin: 10px !important;
+}
+
+@media (max-width: 400px){
+	#gallery-1 .gallery-item {
+		width: 100%;
+	}
+}
+
+.portfolio-link h2 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    background: rgba(77, 77, 77, 0.65);
+    margin: 0;
+	font-family: "Aku-Kamu";
+	margin: 0;
+	padding: 5px 5px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* PAGE GALERIE */
+
+/** FORMULAIRE **/
+form{
+	margin: 5% auto 0;
+	font-family: 'Aku-Kamu';
+}
+fieldset{
+	border-radius: 15px;
+	/* PREFIXE */
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	/* PREFIXE */
+	border: 3px solid #b48a28;
+	background-color: #0f75bc;
+}
+label{
+	font-size: 16px;
+	color: #FFF;
+	font-weight: 100 !important;
+}
+.form-control{
+	font-family: sans-serif;
+}
+
+form img{
+	width: 200px;
+	height: 200px;
+}
+#form{
+	margin: 10%;
+}
+footer a{
+	color: #b48a28;
+}
+.mdp{
+	width:auto;
+}
+.mdp a{
+	color: #000;
+}
+@media (min-width: 486px){
+	form{
+		width: 400px;
+	}
+}
+/** FIN FORMULAIRE **/
+
+/** ACTUALITE**/
+#titrePage {
+	max-width: 950px;
+    background-color: #4D4D4D;
+}
+
+#titrePage .contenu {
+    height: auto;
+}
+
+#titrePage .contenu h1{
+    font-size: 3em;
+    color: #fff;
+    font-family: "Aku-Kamu";
+    text-align: center;
+	text-transform: uppercase;
+	margin: 3% 0;
+}
+
+#articles{
+	font-family: 'Franklin Book';
+	margin-top: 30px;
+}
+
+#articles a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+	#titrePage {
+		margin-top: 104px;
+	}
+}
+
+.zoomarticle {
+	height: auto;
+	float: left;
+	margin-bottom: 1.65em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none !important;
+}
+
+.actu1, .case{
+	width: 100%;
+	height: 286px;
+	overflow: hidden;
+}
+.actu1 > img, .case > img{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.zoomarticle:hover > .actu1> img, .zoomarticle:hover > .case> img {
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
+.actu1 img, .case img, #description{
+	width: 100%;
+	height: 50%;
+}
+
+#description .titre{
+    width: 100%;
+}
+
+#description .titre h2{
+	font-family: "Aku-Kamu";
+    margin: 0;
+	padding: 5px 0px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+
+.description p{
+	margin: 0;
+	padding: 10px 20px;
+	color: #000;
+}
+section#category {
+    background-color: #737373;
+}
+#filtre {
+	list-style-type: none;
+    float: right;
+    padding-right: 10px;
+	padding-left: 0;
+	margin-top: 1em;
+}
+#filtre:before {
+	content:'Filtrer les articles : ';
+	color: #FFF;
+	font-family: 'Franklin Book';
+}
+#filtre li {
+	display:inline-block; 
+	background-color:#231f20; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+}
+#filtre li a {
+	display:block; 
+	padding:5px 10px; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+}
+#filtre li a:hover {color:#fff; text-decoration:none;}
+.current-cat a {background-color:#0f75bc; color:#fff;}
+
+#description{
+	background-color: #0f75bc;
+}
+
+.navig-single {margin-bottom:30px;}
+#navig-left {float:left;}
+#navig-right {float:right;}
+.navig-single a {position:relative; padding:5px 10px; display:inline-block; text-transform:uppercase; font-weight:bold; border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px; transition:0.5s; -moz-transition:0.5s;  -webkit-transition:0.5s; border:1px solid #e6e6e6;}
+.navig-single a:hover {background-color: #e6e6e6; padding:5px 20px; text-decoration:none;}
+
+@media (max-width: 789px){
+	#classement .contenu p{
+		font-size: 3em;
+	}
+}
+
+/** FIN ACTUALITE**/
+
+/** EQUIPE **/
+.profileCoach img{
+	width: 100%;
+}
+.profileCoach{
+	padding: 0 !important;
+}
+
+/** FOOTER **/
+footer{
+	color: #333;
+	margin-top: 30px;
+	border-top: 1px solid #dadada;
+}
+#LienContact{
+	padding-top: 20px;
+}
+#LienContact .footer-col h3{
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#LienContact .footer-col p{
+	font-size: 20px;
+	text-align: center;
+}
+#LienContact .footer-col ul{
+	padding: 0;
+}
+#LienContact .footer-col ul li{
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+	float: left;
+}
+#LienContact .footer-col {
+    margin-bottom: 50px;
+}
+#footer p{
+  text-align: center;
+  font-size: 1em;
+  padding: 2%;
+  margin: 0;
+}
+#footer{
+	font-family: 'Aku-Kamu';
+	color: #fff;
+	background-color: #0f75bc;
+    border-bottom-color: #b48a28;
+    border-bottom-style: solid;
+}
+/** FIN FOOTER **/
+

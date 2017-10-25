@@ -1,0 +1,34 @@
+
+#cont{
+position:relative;
+height:100px;
+
+border:solid 1px silver;
+overflow:hidden;
+}
+#lire{
+position:relative;
+margin-top:10px;
+font-family:Verdana;
+}
+#p1, #p2,#p3,#p4,#p5,#p6,#p7,#p8 {
+	display: none;
+}
+.active{
+	display:block;
+}
+#galerie{
+position:absolute;
+}
+.item{
+width:155px;
+height:100px;
+line-height:65px;
+text-align:center;
+float:left;
+cursor:pointer;
+}
+.item img {
+    width: 90%;
+    height: 95%;
+}
